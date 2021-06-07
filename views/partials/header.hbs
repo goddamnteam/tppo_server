@@ -1,0 +1,12 @@
+<header>
+    <h1 class="header_title">{{title}}</h1>
+    <div class="navigation">
+        <a class="nav-button" href="/">О сервисе</a>
+        {{#if isGuest}}
+            <a class="nav-button" href="/auth/login">Войти</a>
+        {{else}}
+            <a class="nav-button" href="/analisation">Анализатор</a>
+            <a class="nav-button" href="/auth/logout">Выход</a>
+        {{/if}}
+    </div>
+</header>

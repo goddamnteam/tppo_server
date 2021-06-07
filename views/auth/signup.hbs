@@ -1,0 +1,35 @@
+<!--<form action="/auth/post-signup" method="POST">-->
+<!--    <label>-->
+<!--        Login-->
+<!--        <input name="login" type="text"/>-->
+<!--    </label>-->
+<!--    <br><br>-->
+<!--    <label>-->
+<!--        Password-->
+<!--        <input name="password" type="password" min="3"/>-->
+<!--    </label>-->
+<!--    <br><br>-->
+<!--    <input type="submit" value="Отправить"/>-->
+<!--</form>-->
+
+<link rel="stylesheet" href="/stylesheets/authorization.css">
+
+<div class="main">
+    <div class="auth-frame-header">
+        <h2 class="auth-frame-title">Регистрация</h2>
+    </div>
+
+    <div class="auth-frame-body">
+        <form class="form" action="/auth/post-signup" method="post">
+            <label for="reg_login">Логин</label>
+            <input id="reg_login" type="text" name="login" min="3" max="32">
+
+            <label for="reg_password">Пароль</label>
+            <input id="reg_password" type="password" name="password" min="3" max="32">
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+
+        <a class="auth-ref" href="/auth/login">Войти</a>
+    </div>
+</div>

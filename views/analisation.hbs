@@ -1,0 +1,49 @@
+<script defer src="/javascripts/testCameraReader.js"></script>
+
+<div class="main">
+    <div class="container">
+        <div class="params">
+            <div class="checkboxes-header">
+                <h3>Распознавать</h3>
+            </div>
+            <div class="checkboxes">
+                <div class="row">
+                    <div class="left-column"><input id="check1" type="checkbox" name="check" value="check1"></div>
+                    <div class="right-column"><label for="check1">Силуэты людей</label></div>
+                </div>
+
+                <div class="row">
+                    <div class="left-column"><input id="check2" type="checkbox" name="check" value="check2"></div>
+                    <div class="right-column"><label for="check2">Вид активности</label></div>
+                </div>
+
+                <div class="row">
+                    <div class="left-column"><input id="check3" type="checkbox" name="check" value="check3"></div>
+                    <div class="right-column"><label for="check3">Скорость движения</label></div>
+                </div>
+
+                <div class="row">
+                    <div class="left-column"><input id="check4" type="checkbox" name="check" value="check4"></div>
+                    <div class="right-column"><label for="check4">Направление движения</label></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="video">
+            <video id="video"></video>
+            <canvas id="shot"></canvas>
+        </div>
+    </div>
+
+    <div class="cam-button">
+        <button id="startCamera" class="blue-button">Начать чтение видеопотока</button>
+
+        <div class="upload-form">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label>Загрузить видеофайл</label>
+                <input type="file" name="filedata" size="60"/>
+                <input type="submit" value="Получить распознанный файл" />
+            </form>
+        </div>
+    </div>
+</div>

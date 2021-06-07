@@ -1,0 +1,45 @@
+<!--<form action="/auth/post-login" method="POST">-->
+<!--    <label>-->
+<!--        Login-->
+<!--        <input name="login" type="text"/>-->
+<!--    </label>-->
+<!--    <br><br>-->
+<!--    <label>-->
+<!--        Password-->
+<!--        <input name="password" type="password" min="3"/>-->
+<!--    </label>-->
+<!--    <br><br>-->
+<!--    <input type="submit" value="Отправить" />-->
+<!--</form>-->
+<div class="main">
+    <div class="tabs">
+        <nav class="tabs_refs">
+            <a href="#reg" class="tabs_ref"><span>Регистрация</span></a>
+            <a href="#auth" class="tabs_ref"><span>Авторизация</span></a>
+        </nav>
+
+        <div class="tabs_body">
+            <div id="reg" class="tabs_block">
+                <form class="form" action="" method="post">
+                    <label for="reg_login">Логин</label>
+                    <input id="reg_login" type="text" name="login">
+                    <label for="reg_password">Пароль</label>
+                    <input id="reg_password" type="password" name="password">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email">
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+
+            <div id="auth" class="tabs_block">
+                <form class="form" action="" method="post">
+                    <label for="log_login">Логин</label>
+                    <input id="log_login" type="text" name="login">
+                    <label for="log_password">Пароль</label>
+                    <input id="log_password" type="password" name="password">
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
